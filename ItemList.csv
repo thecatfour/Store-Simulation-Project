@@ -1,11 +1,11 @@
-Item ID,Name,Vendor ,Cost (USD),Stock,Tags,Weight
-1,Apples,Fruit Inc.,1.89,50,"TestItem, Fruit",1
-2,Strawberries,Fruit Inc.,2.97,50,"TestItem, Fruit",1
-3,Bananas,Fruit Inc.,0.59,50,"TestItem, Fruit",1
-4,Scissors,Manufact Co.,4.99,20,"TestItem, Office",1
-5,Stapler,Manufact Co.,9.99,20,"TestItem, Office",1
-6,Staples,Manufact Co.,2.99,100,"TestItem, Office",1
-7,Paperclips,Manufact Co.,2.99,200,"TestItem, Office",1
-8,Paper,Manufact Co.,3.99,50,"TestItem, Office",1
-9,Shirt,Clothes Corp.,21.99,30,"TestItem, Clothes",1
-10,Shorts,Clothes Corp.,15.99,25,"TestItem, Clothes",1
+Item Id,Name,Vendor ,Cost (USD),Stock,Tags,Weight
+0,Apples,Fruit Inc.,1.89,50,"TestItem, Fruit",1
+1,Strawberries,Fruit Inc.,2.97,50,"TestItem, Fruit",1
+2,Bananas,Fruit Inc.,0.59,50,"TestItem, Fruit",1
+3,Scissors,Manufact Co.,4.99,20,"TestItem, Office",1
+4,Stapler,Manufact Co.,9.99,20,"TestItem, Office",1
+5,Staples,Manufact Co.,2.99,100,"TestItem, Office",1
+6,Paperclips,Manufact Co.,2.99,200,"TestItem, Office",1
+7,Paper,Manufact Co.,3.99,50,"TestItem, Office",1
+8,Shirt,Clothes Corp.,21.99,30,"TestItem, Clothes",1
+9,Shorts,Clothes Corp.,15.99,25,"TestItem, Clothes",1
