@@ -29,6 +29,7 @@ class Customer:
 
         # Used to determine the max amount of things the customer can buy
         self.max_buy_attempts = max_buy_attempts
+        self.starting_buy_attempts = max_buy_attempts
 
         # Set by a store simulator object of when the customer entered the store (in minutes)
         self.enter = None
@@ -119,6 +120,18 @@ class Customer:
 
         del self.items_bought
         self.items_bought = {}
+
+
+
+    def reset_customer(self):
+        """
+        Resets a customer to their initial state.
+        """
+
+        self.max_buy_attempts = self.starting_buy_attempts
+        self.reset_items()
+        self.reset_money_to_starting_money()
+        self.set_enter(None)
 
 
 
