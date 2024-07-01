@@ -1,11 +1,21 @@
 Item Id,Name,Vendor,Cost (USD),Stock,Tags,Weight
-0,Apples,Fruit Inc.,1.89,50,"First Item Group, Fruit",1
-1,Strawberries,Fruit Inc.,2.97,50,"First Item Group, Fruit",1
-2,Bananas,Fruit Inc.,0.59,50,"First Item Group, Fruit",1
-3,Scissors,Manufact Co.,4.99,20,"First Item Group, Office",1
-4,Stapler,Manufact Co.,9.99,20,"First Item Group, Office",1
-5,Staples,Manufact Co.,2.99,100,"First Item Group, Office",1
-6,Paperclips,Manufact Co.,2.99,200,"First Item Group, Office",1
-7,Paper,Manufact Co.,3.99,50,"First Item Group, Office",1
-8,Shirt,Clothes Corp.,21.99,30,"First Item Group, Clothes",1
-9,Shorts,Clothes Corp.,15.99,25,"First Item Group, Clothes",1
+0,Apples,Fruit Inc.,1.89,30,"['First Item Group', 'Fruit', 'Food']",1
+1,Strawberries,Fruit Inc.,2.97,30,"['First Item Group', 'Fruit', 'Food']",1
+2,Bananas,Fruit Inc.,0.59,30,"['First Item Group', 'Fruit', 'Food']",1
+3,Scissors,Manufact Co.,4.99,20,"['First Item Group', 'Office', 'Tool']",1
+4,Stapler,Manufact Co.,9.99,20,"['First Item Group', 'Office', 'Tool']",1
+5,Staples,Manufact Co.,2.99,100,"['First Item Group', 'Office']",1
+6,Paperclips,Manufact Co.,2.99,200,"['First Item Group', 'Office']",1
+7,Paper,Manufact Co.,3.99,50,"['First Item Group', 'Office']",1
+8,Shirt,Clothes Corp.,21.95,30,"['First Item Group', 'Clothes']",1
+9,Shorts,Clothes Corp.,15.95,25,"['First Item Group', 'Clothes']",1
+10,Bread,Bake 4 U,9.99,20,"['Second Item Group', 'Baked Good', 'Food']",1
+11,Cake,Bake 4 U,19.99,10,"['Second Item Group', 'Baked Good', 'Food']",1
+12,Cinnamon  Bun,Bake 4 U,4.99,40,"['Second Item Group', 'Baked Good', 'Food']",1
+13,Hammer,Manufact Co.,17.99,20,"['Second Item Group', 'Tool']",1
+14,Screwdriver,Manufact Co.,15.99,20,"['Second Item Group', 'Tool']",1
+15,Apples,Farmers For The Market,2,30,"['Second Item Group', 'Fruit', 'Food']",1
+16,Watermelon,Farmers For The Market,5,30,"['Second Item Group', 'Fruit', 'Food']",1
+17,Bananas,Farmers For The Market,1,30,"['Second Item Group', 'Fruit', 'Food']",1
+18,Sunglasses,Clothes Corp.,9.95,30,"['Second Item Group', 'Clothes', 'Accessory']",1
+19,Earrings,Clothes Corp.,49.95,20,"['Second Item Group', 'Clothes', 'Accessory']",1
