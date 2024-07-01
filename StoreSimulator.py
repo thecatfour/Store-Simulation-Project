@@ -10,8 +10,8 @@ from ast import literal_eval
 class StoreSimulator:
     # Used when determining what action a customer will take
     LOOK_CHANCE = 0.6
-    BUY_CHANCE = 0.37
-    LEAVE_CHANCE = 0.03
+    BUY_CHANCE = 0.38
+    LEAVE_CHANCE = 0.02
     
     # Used to create a directory for all output files
     OUTPUT_DIR_NAME = "Store Simulator Output Files"
@@ -138,9 +138,6 @@ class StoreSimulator:
         # Remove that customer from the dict
         self.customers_in_store.pop(customer.name)
 
-        # Reset their item transactions
-        customer.reset_items()
-
         # Increment transaction id
         self.next_transaction_id += 1
 
@@ -185,6 +182,8 @@ class StoreSimulator:
                 # If list is empty, there is nothing left to buy or nothing the customer wants, so they leave
                 if potential_buys == []:
                     self.__customer_leaves(customer)
+                    if self.verbose:
+                        print(customer.name + " list empty.")
                     return
                 
                 # Use rand to determine an item that the customer will buy
@@ -207,10 +206,14 @@ class StoreSimulator:
             else:
                 # Customer decides to leave
                 self.__customer_leaves(customer)
+                if self.verbose:
+                    print(customer.name + " decided to leave.")
                 return
         else:
             # Customer leaves as they want nothing else
             self.__customer_leaves(customer)
+            if self.verbose:
+                print(customer.name + " doesnt want more.")
             return
 
 
