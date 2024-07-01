@@ -14,13 +14,13 @@ def create_random_customer_list(store: sim.StoreSimulator, customer_count: int =
 
 
 
-def reset_customer_money(customer_list: list):
+def reset_customers(customer_list: list):
     """
-    Resets the money on each customer in the customer list.
+    Resets each customer in the customer list.
     """
 
     for customer in customer_list:
-        customer.reset_money_to_starting_money()
+        customer.reset_customer()
 
 
 
@@ -76,13 +76,13 @@ if __name__ == "__main__":
         
         match str(user_input):
             case "1":
+                # Reset customers
+                reset_customers(customer_list)
                 # Simulate one day
                 store.simulate_one_day(customer_list.copy(), False, 0.1, 3)
                 # Output to csv files
                 store.output_stock()
                 store.output_transactions()
-                # Reset customer money
-                reset_customer_money(customer_list)
             case "2":
                 # Get income for this day
                 print("Day " + str(store.day) + " Income: " + str(store.get_income_for_current_day()))
@@ -209,6 +209,13 @@ if __name__ == "__main__":
                 exit()
             case "Q":
                 exit()
+            case "c":
+                # Hidden debug option
+                user_input = input("Customer Name: ")
+                for customer in customer_list:
+                    if customer.name == user_input:
+                        print(customer)
+                        break
             case _:
                 print("Invalid selection.")
         
