@@ -44,8 +44,8 @@ if __name__ == "__main__":
 
     item_database = "ItemList.csv"
     start_hour = 9
-    end_hour = 17
-    action_interval_in_mins = 2
+    end_hour = 18
+    action_interval_in_mins = 5
     verbose = False
     store_name = "New Store"
 
